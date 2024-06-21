@@ -1,0 +1,41 @@
+div {
+    padding: auto;
+
+}
+
+*  {
+    color: red;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvascontainer {
+    width: 80vw;
+    height: 80vw;
+}
+.rowcontainer {
+    display: flex;
+    width: auto;
+    
+}
+
+.rowitem {
+    /*flex 1 makes it so that the boxes spread to fill their entire container*/
+    flex: 1;   
+    background-color: brown;
+    aspect-ratio: 1/1;
+    width: auto;
+    height: auto;
+
+}
+
+.adjustcanvas {
+    color: blue;
+    padding: 1vw;
+    margin: 2vw;
+    align-items: center;
+}
