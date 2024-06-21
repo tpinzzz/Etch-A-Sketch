@@ -37,7 +37,7 @@ function createGrid(numberofsquares){
 
             //add event listeners for hovering functionality to each square
             square.addEventListener("mouseenter", (e) => {
-                e.target.style.background = "blue";
+                e.target.style.background = randomcolor();
             })
         }
 
@@ -68,5 +68,18 @@ adjustcanvas.addEventListener("click", () => {
 
 //random color function
 
+//standard JS approach
+function random(min,max) {
+    return Math.floor((Math.random())*(max-min+1))+min;
+   }
 
+//random color funciton
+
+function randomcolor() {
+    const r = random(0, 255);
+    const g = random(0, 255);
+    const b = random(0, 255);
+    const rgb = `rgb(${r},${g},${b})`; // Collect all to a css color string
+    return rgb;
+}
 
