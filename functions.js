@@ -15,6 +15,8 @@ createGrid(numberofsquares);
 
 function createGrid(numberofsquares){
 
+
+
     for (let i = 0; i < numberofsquares; i++){
     //create div for each row 
     const r = document.createElement("div");
@@ -52,7 +54,9 @@ adjustcanvas.addEventListener("click", () => {
         numberofsquares = parseInt(numberofsquares);
         if (!isNaN(numberofsquares) && numberofsquares > 0 && numberofsquares <= 100) {
             console.log("test")
+            //delete current grid
             canvascontainer.innerHTML = '';
+            //create
             createGrid(numberofsquares);
         } else {
             alert("Please enter a valid number between 1 and 100.");
@@ -61,6 +65,8 @@ adjustcanvas.addEventListener("click", () => {
 });
 
 
+
+//random color function
 
 
 

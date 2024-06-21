@@ -1,3 +1,9 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 div {
     padding: auto;
 
@@ -11,21 +17,26 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
 
 .canvascontainer {
-    width: 80vw;
-    height: 80vw;
+    width: 80vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    
 }
 .rowcontainer {
     display: flex;
-    width: auto;
+    flex: 1;
+    flex-direction: column;
+    height: auto;
     
 }
 
 .rowitem {
-    /*flex 1 makes it so that the boxes spread to fill their entire container*/
-    flex: 1;   
+    /*flex 1 makes it so that the boxes spread to fill their entire container*/ 
     background-color: brown;
     aspect-ratio: 1/1;
     width: auto;
